@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My Flask App</title>
+		<link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		{% include 'includes/_navbar.html' %}
+		<div class ="container">
+			{% include 'includes/_messages.html' %}
+			{% block body %}{% endblock %}
+		</div>
+		<script source="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
